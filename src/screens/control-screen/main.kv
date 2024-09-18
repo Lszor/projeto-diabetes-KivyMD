@@ -1,0 +1,79 @@
+MDScreen:
+    MDBottomNavigation:
+        #panel_color: "#eeeaea"
+        selected_color_background: "orange"
+        text_color_active: "lightgrey"
+
+        MDBottomNavigationItem:
+            name: 'screen 1'
+            text: 'Paciente'
+            icon: 'account'
+            badge_icon: "numeric-10"
+
+            MDBoxLayout:
+                orientation: "vertical"
+                spacing: 10
+                padding:10
+
+                MDCard:
+                    id:'caed1'
+	                elevation: 0
+	                md_bg_color: 0, 0.5, 0.8,0.4
+	                halign: 'center'
+
+	                MDLabel:
+                        id: lbl_paciente
+                        text: 'Dados do Paciente'
+                        font_size: '12'
+                        halign: 'center'
+
+        MDBottomNavigationItem:
+            name: 'screen 2'
+            text: 'Medicamentos'
+            icon: 'pill'
+            badge_icon: "numeric-5"
+
+            MDBoxLayout:
+                orientation: "vertical"
+                spacing: 10
+                padding:10
+
+                MDCard:
+                    id:'caed1'
+	                elevation: 0
+	                md_bg_color: 0, 0.5, 0.8,0.4
+	                halign: 'center'
+
+	                MDLabel:
+                        id: lbl_medicamento
+                        text: 'Dados sobre o Medicamento: '
+                        font_size: '12'
+                        halign: 'center'
+
+        MDBottomNavigationItem:
+            name: 'screen 3'
+            text: 'Controle de Diabetes: '
+            icon: 'diabetes'
+
+            MDBoxLayout:
+                orientation: "vertical"
+                spacing: 10
+                padding:10
+
+                MDCard:
+                    id:'caed1'
+	                elevation: 0
+	                md_bg_color: 0, 0.5, 0.8,0.4
+	                halign: 'center'
+
+                    AsyncImage:
+                        source: "src/assets/diabetes.png"
+                        pos_hint: {"center_x":.10, "center_y":.8}
+                        size_hint_x: .4
+                        size_hint_y: .3
+                    
+                    MDLabel:
+                        id: lbl_controlDiabetes
+                        text: 'Dados sobre o Controle: '
+                        font_size: '12'
+                        halign: 'center'
